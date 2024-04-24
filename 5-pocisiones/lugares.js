@@ -18,14 +18,24 @@ const jugadores = [
         nombre: 'Nahitan',
         apellido: 'Nández',
         apodo: '',
-        fechaNac: '1996-12-28'
+        posicion: 'Mediocampista',
+        fechaNacimiento: '28-12-1996'
     },
     {
         nombre: 'Federico',
         apellido: 'Valverde',
         apodo: 'Pajarito',
-        fechaNac: '1998-07-22'
+        posicion: 'Mediocampista',
+        fechaNacimiento: '22-07-1998'
+    },
+    {
+        nombre: 'Diego',
+        apellido: 'Lugano',
+        apodo: 'La tota',
+        posicion: 'Defensa',
+        fechaNacimiento: '02-11-1980'
     }
 ];
 
-jugadores.forEach(imprimirInformacionJugador);
+const mediocampistas = jugadores.filter(jugador => jugador.posicion === 'Mediocampista');
+console.log(mediocampistas);
